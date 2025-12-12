@@ -268,39 +268,119 @@
 </script>
 
  
-  <section id="ciudades" class="py-5">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-4">CIUDADES DISPONIBLES</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow ciudad-card ciudad" style="cursor:pointer;" data-ciudad="lima">
-            <img src="https://th.bing.com/th/id/R.ae6a7e72b856520efda0f69c4862e7ce?rik=jD3mvJxPzUq4aQ&pid=ImgRaw&r=0  " class="card-img-top ciudad-img" alt="Lima">
-            <div class="card-body">
-              <h5 class="card-title">Nuevo Chimbote</h5>
-              <p class="card-text">La capital, con todo a tu alcance.</p>
-            </div>
+  <section id="ciudades" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-2">LUGARES DISPONIBLES</h2>
+    <p class="text-center text-muted mb-5">
+      Estamos creciendo para llevar DeliExpress a más lugares 🚀
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Nuevo Chimbote -->
+      <div class="col-md-5">
+        <div class="ciudad-card" data-ciudad="nuevo-chimbote">
+          <span class="ciudad-badge">Disponible</span>
+          <img src="https://th.bing.com/th/id/R.ae6a7e72b856520efda0f69c4862e7ce?rik=jD3mvJxPzUq4aQ&pid=ImgRaw&r=0" alt="Nuevo Chimbote">
+          <div class="ciudad-overlay">
+            <h5>Nuevo Chimbote</h5>
+            <p>
+              Restaurantes, farmacias y tiendas a minutos de tu casa.
+            </p>
           </div>
         </div>
-
-  
-
-      
-
-      
-
-        <div class="col-md-6">
-          <div class="card h-100 shadow ciudad-card ciudad" style="cursor:pointer;" data-ciudad="chimbote">
-            <img src="https://www.tunesaexpres.com/wp-content/uploads/2019/11/chimbote.png" class="card-img-top ciudad-img" alt="Chimbote">
-            <div class="card-body">
-              <h5 class="card-title">Chimbote</h5>
-              <p class="card-text">La bahía y sus sabores, ahora a domicilio.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Chimbote -->
+      <div class="col-md-7">
+        <div class="ciudad-card" data-ciudad="chimbote">
+          <span class="ciudad-badge">Disponible</span>
+          <img src="https://www.tunesaexpres.com/wp-content/uploads/2019/11/chimbote.png" alt="Chimbote">
+          <div class="ciudad-overlay">
+            <h5>Chimbote</h5>
+            <p>
+              La bahía y sus mejores sabores, ahora directo a tu puerta.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+<style>
+  .ciudad-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    min-height: 320px;
+    color: #fff;
+    transition: transform .4s ease, box-shadow .4s ease;
+  }
+
+  .ciudad-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+  }
+
+  .ciudad-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+  }
+
+  .ciudad-card:hover img {
+    transform: scale(1.1);
+  }
+
+  .ciudad-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,.75),
+      rgba(0,0,0,.25)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+  }
+
+  .ciudad-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background-color: #00A082;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: 600;
+  }
+
+  .ciudad-overlay h5 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+
+  .ciudad-overlay p {
+    font-size: .95rem;
+    margin-bottom: 12px;
+    opacity: .95;
+  }
+
+  .ciudad-overlay .btn {
+    align-self: flex-start;
+    background-color: #FFC244;
+    color: #000;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 8px 18px;
+  }
+</style>
+
 
   <!-- CÓMO FUNCIONA -->
   <section class="text-center py-5" style="background-color:#83b395;color:#000;">
