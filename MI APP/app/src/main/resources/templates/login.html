@@ -33,19 +33,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
-            <a class="nav-link fw-bold" th:href="@{/}" style="color: #00A082;">Inicio</a>
+            <a class="nav-link fw-bold" th:href="@{/}" style="color: #00A082;">Inicasdasdio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" th:href="@{/soporte}" style="color: #00A082;">Soporte</a>
+            <a class="nav-link fw-bold" th:href="@{/soporte}" style="color: #00A082;">Sopoasdasdsdrte</a>
           </li>
           <li class="nav-item">
             <!-- Ajusta esta ruta a lo que tengas mapeado -->
-            <a class="nav-link fw-bold" th:href="@{/ofrecemos}" style="color: #00A082;">Qué ofrecemos</a>
+            <a class="nav-link fw-bold" th:href="@{/ofrecemos}" style="color: #00A082;">Qué oasdasdasfrecemos</a>
           </li>
         </ul>
         <a th:href="@{/register}" class="btn ms-3 px-4 py-2 fw-bold d-flex align-items-center"
            style="background-color: #00A082; color: white; border-radius: 50px;">
-          <i class="bi bi-person-plus me-2"></i> Registrarse
+          <i class="bi bi-person-plus me-2"></i> Regiasdasdasdstrarse
         </a>
       </div>
     </div>
@@ -53,11 +53,11 @@
 
   <!-- FORMULARIO DE LOGIN -->
   <div class="login-card mt-5">
-    <h3 class="text-center mb-4 fw-bold" style="color: #00A082;">Iniciar Sesión</h3>
+    <h3 class="text-center mb-4 fw-bold" style="color: #00A082;">Iniciaasdasdasdasdr Sesión</h3>
 
     <!-- Mensaje si viene de registro exitoso -->
     <div th:if="${param.registered}" class="alert alert-success text-center">
-      Registro exitoso. Ahora inicia sesión.
+      Registro exitoso. Ahora iasdasdnicia sesión.
     </div>
 
     <form th:action="@{/login}" method="post">
@@ -65,19 +65,19 @@
       <!-- <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"> -->
 
       <div class="mb-3">
-        <label class="form-label fw-semibold">Correo electrónico</label>
+        <label class="form-label fw-semibold">Correoasdasdasd electrónico</label>
         <!-- Spring usa el campo name="username" (aunque sea email) -->
         <input type="email" class="form-control" name="username"
                placeholder="ejemplo@correo.com" required autocomplete="username" autofocus>
       </div>
 
       <div class="mb-3">
-        <label class="form-label fw-semibold">Contraseña</label>
+        <label class="form-label fw-semibold">Contrasdasdaseña</label>
         <input type="password" class="form-control" name="password"
                placeholder="********" required autocomplete="current-password">
       </div>
 
-      <button type="submit" class="btn btn-success w-100 fw-bold">Ingresar</button>
+      <button type="submit" class="btn btn-success w-100 fw-bold">Ingreasdasdsar</button>
     </form>
 
     <!-- Errores / logout -->
