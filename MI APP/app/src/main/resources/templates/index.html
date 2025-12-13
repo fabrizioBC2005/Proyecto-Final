@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DELIEXPRESS | Delivery rápido y local</title>
+  <title>DELIEXPRESS | Deliasdasdvery rápido y local</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -28,10 +28,10 @@
   <section id="inicio" class="bg-light text-dark text-center p-5">
     <div class="container">
       <h1 class="display-4 fw-bold">
-        Tu calidad en tiempo récord somos DeliExpress
+        Tu calidad en tiempo récasdasdasdord somos DeliExpress
         
       </h1>
-      <p class="lead">“Estamos creciendo para llegar a más ciudades ”.</p>
+      <p class="lead">“Estamos creasdasdciendo para llegar a más ciudades ”.</p>
       
 <!-- Barra de búsqueda -->
 <div class="input-group mt-3 shadow-sm" style="max-width:500px;margin:0 auto;">
@@ -42,7 +42,7 @@
          th:value="${direccionInicial}">
   <button class="btn" style="background-color:#00A082;color:white;"
           data-bs-toggle="modal" data-bs-target="#direccionModal">
-    Buscar
+    Buasdasdasdscar
   </button>
 </div>
     </div>
@@ -53,7 +53,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content rounded-4 shadow">
         <div class="modal-header border-0">
-          <h5 class="modal-title fw-bold" id="direccionModalLabel">¿Dónde hay que hacer la entrega?</h5>
+          <h5 class="modal-title fw-bold" id="direccionModalLabel">¿Dóndeasdasdasd hay que hacer la entrega?</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body text-center">
@@ -65,10 +65,10 @@
           <ul id="resultados" class="list-group shadow-sm mb-3" style="max-width:600px;margin:0 auto;border-radius:12px;overflow:hidden;"></ul>
           <div id="map" style="height:350px;border-radius:12px;margin-bottom:15px;"></div>
           <button class="btn w-100 mb-3" style="background-color:#E6F7F2;color:#00695C;border-radius:30px;font-weight:bold;" id="usarUbicacion">
-            <i class="bi bi-geo-alt-fill me-2"></i> Utilizar la ubicación actual
+            <i class="bi bi-geo-alt-fill me-2"></i> Utilizar la asdasdasdubicación actual
           </button>
           <button class="btn w-100 fw-bold" id="confirmarDireccion" style="background-color:#00A082;color:white;border-radius:30px;display:none;">
-            Confirmar dirección
+            Confirmaasasdasdasdr dirección
           </button>
         </div>
       </div>
@@ -143,7 +143,7 @@
       }
 
       if (!selectedCoords) {
-        alert("Selecciona una dirección (clic en mapa o en un resultado) o escribe una dirección válida.");
+        alert("Selecciona una dirección (clic en mapa o en un resultasasdado) o escribe una dirección válida.");
         return;
       }
 
@@ -181,10 +181,10 @@
         });
 
         if (resp.ok) {
-          alert("Dirección guardada correctamente. Se usará en el checkout.");
+          alert("Dirección guaasdasdrdada correctamente. Se usará en el checkout.");
           // window.location.href = '/checkout'; // opcional
         } else if (resp.status === 401) {
-          alert("Debes iniciar sesión para guardar tu dirección.");
+          alert("Debesasdasd iniciar sesión para guardar tu dirección.");
         } else {
           alert("Ocurrió un error al guardar la dirección.");
         }
